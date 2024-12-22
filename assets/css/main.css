@@ -1,0 +1,312 @@
+:root {
+    /* Font Families */
+    --font-montserrat: "Montserrat", serif;
+    --font-poppins: "Poppins", serif;
+
+    /* Font Weights */
+    --weight-thin: 300;
+    --weight-md: 400;
+    --weight-semibold: 500;
+    --weight-bold: 600;
+
+    /* Font Sizes */
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-36: 2.25rem;
+    --font-size-48: 3rem;
+
+    /* Colors */
+    --blue1: #04346c;
+    --blue2: #04336b;
+    --blue3: #04224c;
+    --text-blue1: #98d6fc;
+    --text-blue2: #83b3f2;
+    --text-blue3: #9ce6fd;
+    --yellow1: #ffc646;
+    --yellow2: #ffcc00;
+    --yellow3: #ffe70c;
+    --dark: #333;
+    --dark-bold: #000;
+    --light: #fff;
+    --light-bold: #eee;
+}
+/* =======[Font Setting]======= */
+.f-montserrat-thin {
+    font-family: var(--font-montserrat);
+    font-weight: var(--weight-thin);
+}
+.f-montserrat-md {
+    font-family: var(--font-montserrat);
+    font-weight: var(--weight-md);
+}
+.f-montserrat-semibold {
+    font-family: var(--font-montserrat);
+    font-weight: var(--weight-semibold);
+}
+.f-montserrat-bold {
+    font-family: var(--font-montserrat);
+    font-weight: var(--weight-bold);
+}
+.poppins-thin {
+    font-family: var(--font-poppins);
+    font-weight: var(--weight-thin);
+}
+.poppins-md {
+    font-family: var(--font-poppins);
+    font-weight: var(--weight-md);
+}
+.poppins-semibold {
+    font-family: var(--font-poppins);
+    font-weight: var(--weight-semibold);
+}
+.poppins-bold {
+    font-family: var(--font-poppins);
+    font-weight: var(--weight-bold);
+}
+/* ---[Font Size] --- */
+.f14 {
+    font-size: var(--font-size-14);
+}
+.f16 {
+    font-size: var(--font-size-16);
+}
+.f18 {
+    font-size: var(--font-size-18);
+}
+.f20 {
+    font-size: var(--font-size-20);
+}
+.f24 {
+    font-size: var(--font-size-24);
+}
+.f28{
+    font-size: var(--font-size-28);
+}
+.f36{
+    font-size: var(--font-size-36);
+}
+.f48{
+    font-size: var(--font-size-48);
+}
+/* ---[Text Style] --- */
+.f-uppercase {
+    text-transform: uppercase;
+}
+.f-capitalize {
+    text-transform: capitalize;
+}
+.f-lowercase {
+    text-transform: lowercase;
+}
+/* ---[Background Color]--- */
+.bg-blue1 {
+    background-color: var(--blue1);
+}
+.bg-blue2 {
+    background-color: var(--blue2);
+}
+.bg-blue3 {
+    background-color: var(--blue3);
+}
+/* ---[Text Color]--- */
+.text-blue1 {
+    color: var(--text-blue1);
+}
+.text-blue2 {
+    color: var(--text-blue2);
+}
+.text-blue3 {
+    color: var(--text-blue3);
+}
+.text-yellow1 {
+    color: var(--yellow1);
+}
+.text-yellow2 {
+    color: var(--yellow2);
+}
+.text-yellow3 {
+    color: var(--yellow3);
+}
+.text-dark {
+    color: var(--dark);
+}
+.text-dark-bold {
+    color: var(--dark-bold);
+}
+.text-light {
+    color: var(--light);
+}
+.text-light-bold {
+    color: var(--light-bold);
+}
+/* =====[Default Setting]===== */
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--text-blue1);
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: "Montserrat", serif;
+}
+p{
+    font-family: "Poppins", serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+/* CSS untuk section hero */
+#hero-section {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+#hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+#hero-section .row {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding-top: 35vh;
+}
+/* =====[Recommend Product]===== */
+
+/* Owl Carousel Setting */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    max-width: 100%;
+    height: 230px;
+    border-radius: 4px;
+}
+.button-order {
+    background-color: var(--blue1);
+    color: var(--light);
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-16);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.button-order:hover {
+    background-color: var(--text-blue1);
+    color: var(--blue1);
+}
+
+/* =====[Best Product]===== */
+#best-product{
+    padding: 10px;
+}
+/* =====[Testimonial]===== */
+.testimonial {
+    padding: 50px 0;
+}
+
+.testimonial h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonial .card-testimoni {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.testimonial .img-testimonial {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* =====[Ratings]===== */
+.rating-chart {
+    margin: 20px 0;
+}
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.star-label {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.star-label i {
+    color: #ffc107;
+}
+.rating-bar {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.filled-bar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 5px;
+}
+.rating-count {
+    width: 50px;
+    text-align: right;
+}
+
+/* =====[Footer Section]===== */
+#footer{
+    background-color: var(--blue2);
+    padding: 20px;
+    text-align: center;
+    color: var(--light);
+    font-family: var(--font-montserrat);
+    text-transform: var(--weight-md);
+    font-size: var(--font-size-16);
+}
+#footer .credits a{
+    color: var(--light-bold);
+}
